@@ -1,0 +1,415 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.banner-image{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.banner-image h1{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.banner-image h4{
+    color: #fff;
+}
+.banner-image .btn{
+    border: 2px solid white;
+    transition: all .8s ease;
+    width: 20%;
+}
+.banner-image .btn:hover{
+    background:red;
+    color: whitesmoke;
+    transition: all .8s ease;
+    border: 2px solid red;
+    letter-spacing: 3px;
+}
+.navbar-brand{
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 25px;
+    color: whitesmoke;
+    transition: .3s;
+}
+.close{
+    display: none;
+    color: white;
+}
+.change{
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    border-bottom: 1px solid rgb(56, 56, 56);
+    box-shadow: 1px 1px 3px black;
+    transition: all .3s ease;
+}
+.change .navbar-brand{
+    color: white;
+    font-weight: 600;
+}
+.change .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-brand span{
+    color:rgb(226, 0, 0); 
+    font-weight: bold;
+}
+.navbar input{
+    background: transparent;
+}
+.navbar input::placeholder{
+    color: white;
+}
+.navbar input:focus{
+    color: whitesmoke;
+    background:transparent;
+}
+.navbar-nav .nav-link{
+    margin-right: 20px;
+    font-weight: 400;
+    color: whitesmoke;
+}
+.navbar-nav .nav-item a:hover{
+    transition: all .3s ease;
+    letter-spacing: 2px;
+}
+.icons img{
+    width: 50%;
+    filter: grayscale(100%);
+    padding: 15px 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.icons img:hover{
+    filter: none;
+    transform: scale(1.2);
+    transition: all 0.4s ease-in-out;
+}  
+
+.clients{
+    background-color: #f2f2f2;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.box{
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    transition: all ease-in-out 0.3s;
+    margin-bottom: 30px;
+
+}
+.container .box:hover{
+    background-color: red;
+    color: white;
+    transition: all 0.3 ease-in-out;
+    padding: 30px 30px 70px 30px;
+}
+
+.boxs .icons i{
+    display: flex;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    width: 64px;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxs .icons{
+    position: relative;
+    height: 64px;
+    width: 64px;
+    margin: 0 auto;
+}
+.boxs .icons::before{
+    position: absolute;
+    content: "";
+    left: -8px;
+    top: -8px;
+    background: #fce5e5;
+    transition: all 0.3s ease-out 0s;
+    z-index: -4;
+}
+
+.boxs{
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 10%);
+    transition: all ease-in-out 0.3s;
+    margin-bottom: 30px;
+
+}
+.boxs:hover{
+    background-color: red;
+    color: white;
+    transition: all 0.3 ease-in-out;
+    padding: 30px 30px 70px 30px;
+}
+.boxs:hover .icons i{
+    color: red;
+    background: white;
+}
+#services h1{
+    margin-top: 8rem;
+}
+.cta{
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(./images/cta-bg.jpg) fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.cta .container a{
+    transition: all 0.3s ease-in-out;
+}
+.cta .container a:hover{
+    background: red;
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#portfolio .container .row ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;    
+}
+
+#portfolio .container .row ul li{
+    margin: auto 20px;
+}
+#portfolio .container .row ul li a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+}
+
+#pricing h1{
+    margin-top: 8rem;
+}
+#pricing .card{
+    width: 95%;
+    margin: auto;
+    border: none;
+}
+
+#pricing .diff{
+    background: maroon;
+    color: white;
+}
+#pricing .diff .card-body h2{
+    color: white;
+}
+#pricing .diff .card-body .btn{
+    color: red;
+    background: white;
+}
+#pricing .diff .card-body .btn a{
+    color: red;
+}
+#pricing .diff .card-body .btn:hover a{
+    color: white;
+}
+#pricing .card h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#pricing .card h2{
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+
+#pricing .card span{
+    font-size: 20px;
+}
+#pricing .card p{
+    margin-top: 10px;
+}
+#pricing .card .btn{
+    background: red;
+    width: 50%;
+    border-radius: 0px;
+    margin-top: 30px;
+}
+#pricing .card .btn a{
+    color: white;
+    text-decoration: none;
+}
+#pricing .card .btn:hover{
+    background: rgb(56, 56, 56);
+}
+#pricing .card:hover{
+    box-shadow: 0 0 40px 0 darkgrey;
+    transition: all .3s ease-in-out;
+}
+#team h1{
+    margin-top: 8rem;
+}
+#team .card{
+    border-radius: 0px;
+    margin: auto;
+    box-shadow: 0 0 20px 0 lightgrey;
+}
+#team .card img{
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+#team .container h4{
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: bold;
+}
+#team .container h5{
+    font-size: 17px;
+}
+#team .container p{
+    font-size: 16px;
+}
+#team .container .icon i{
+    width: 15px;
+    margin: 3px;
+    color: slategrey;
+    transition: all .5s ease-in-out;
+}
+#team .container .icon i:hover{
+    transform: translateY(3px);
+    color: black;
+    transition: all .5s ease-in-out;
+}
+#contact h1{
+    margin-top: 8rem;
+}
+#contact .info{
+    margin-top: 30px;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 lightgrey;
+}
+#contact .info i{
+    font-size: 25px;
+    color: red;
+    border: 2px red dotted;
+    margin-bottom: 20px;
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+#contact .submit .btn{
+    background: red;
+    color: white;
+    border-radius: 0%;
+    margin-top: 20px;
+    float: right;
+}
+#contact .submit .btn a{
+    color: white;
+    text-decoration: none;
+}
+#contact .submit .btn:hover{
+    background:rgb(56, 56, 56);
+}
+
+#footer{
+    background: black;
+    width: 100%;
+}
+
+#footer .about{
+    padding: 30px;
+    box-shadow: 0px 0 18px 0 gainsboro;
+    color: whitesmoke;
+}
+#footer .about .icons i{
+    width: 35px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 50%;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    transition: all .3s ease;
+}
+#footer .about .icons i:hover{
+    background-color: red;
+    transition: all .3s ease;
+}
+#footer .links li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+#footer .links h5{
+    color: white;
+    margin-bottom: 12px;
+}
+#footer .links li a{
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+#footer .links li a:hover{
+    color: red;
+    margin-left: 5px;
+    transition: all .3s ease-in-out;
+}
+#footer .links i{
+    padding-right: 2px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: red;
+}
+
+#footer .input-group{
+    margin-top: 30px;
+}
+#footer .input-group .btn{
+    background: red;
+    color: whitesmoke;
+    border-radius: 0px;
+}
+#footer input{
+    border-radius: 0px;
+    background: transparent;
+}
+#footer input::placeholder{
+    color: white;
+}
+#footer input:focus{
+    color: whitesmoke;
+}
+#footer .row hr{
+    color: thistle;
+    margin-top: 60px;
+}
+#footer .copyright span{
+    color: red;
+}
+
+@media (max-width:768px){
+    .banner-image{
+        width: 100%;
+        padding-top: 100px;
+        min-height:40vh;
+        text-align: center;
+    }
+    .banner-image .container h1{
+        font-size: 30px;
+    }
+    .banner-image .container h4{
+        font-size: 20px;
+    }
+    .banner-image .container .btn{
+        width: 35%;
+    }
+}
